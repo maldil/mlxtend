@@ -70,7 +70,7 @@ def ftest(y_target, *y_model_predictions):
         correctly_classified_all_models += correctly_classified
         correctly_classified_collection.append(correctly_classified)
 
-    avg_acc = sum(accuracies) / len(accuracies)
+    avg_acc = np.mean(accuracies)
 
     # sum squares of classifiers
     ssa = (
